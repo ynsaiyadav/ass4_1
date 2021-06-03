@@ -21,7 +21,7 @@ pipeline{
 		stage('Deploy Image') {
 			steps{
 				script {
-					docker.withRegistry( '', 'DockerHub' ) {
+					docker.withRegistry( 'https://hub.docker.com', 'ynsaiyadav' ) {
 						dockerImage.push("$BUILD_NUMBER")
 						dockerImage.push('latest')
 					}
