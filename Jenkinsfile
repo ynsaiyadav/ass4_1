@@ -1,7 +1,7 @@
 pipeline{
   agent any
   environment{
-	imagename = "ynsaiyadav/php"
+	imagename = "ynsaiyadav/ass4_1"
 	dockerImage = ''
   }
 	  stages{
